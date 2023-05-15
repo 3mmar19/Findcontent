@@ -58,7 +58,7 @@ or titles that have been used too many times before, show 5 titles; end of every
 async function sendToChatGPT2() {
   let value = `I want you to act as a viral YouTube thumbnail
 creator. Think of thumbnails that are catchy and attention-grabbing,
-and will encourage people to click and watch the video. I will provide you with 5 Titles; end of every title add a dolar sign symbol, and style them to make them cool in output put all titles in a box, make every title in a seprate line, and you will suggest thumbnails for each
+and will encourage people to click and watch the video. I will provide you with 5 Titles; end of every title add a dolar sign symbol, and you will suggest thumbnails for each
 describe what is in the thumbnail very well and be as detailed as you can, so desginers can understnad and create. Here are the titles ${titles}.`;
 
   const options = {
