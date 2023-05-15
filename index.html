@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find my Content</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main-container">
+      <div>
+        <h1 id="main-title">Find My Content</h1>
+      </div>
+      <div id="main-content">
+        <input
+          id="word-input1"
+          type="text"
+          placeholder="enter your video topic"
+          required
+        />
+        <input
+          id="word-input2"
+          type="text"
+          placeholder="enter your video length (in minutes)"
+          required
+        />
+        <button id="submit-btn">➢</button>
+      </div>
+  
+      <h2>Titles:</h2>
+      <span  id="reply-content"></span>
+        <h2>Thumnails:</h2>
+        <span id="reply-content2"></span>
+        <h2>Script:</h2>
+        <span id="reply-content3"></span>
+        <h2>Tweets:</h2>
+        <span id="reply-content4"></span>
+    </div>
+  </body>
+
+  <!-- AXIOS -->
+  <script src="/script .js"></script>
+</html>
