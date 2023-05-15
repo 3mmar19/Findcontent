@@ -1,4 +1,4 @@
-const API_KEY = "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";
+const API_KEY = "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";
 topic = "";
 length = "";
 titles = "";
@@ -58,7 +58,7 @@ or titles that have been used too many times before, show 5 titles; end of every
 async function sendToChatGPT2() {
   let value = `I want you to act as a viral YouTube thumbnail
 creator. Think of thumbnails that are catchy and attention-grabbing,
-and will encourage people to click and watch the video. I will provide you with 5 Titles; end of every title add a dolar sign symbol, and you will suggest thumbnails for each
+and will encourage people to click and watch the video. I will provide you with 5 Titles; end of every thumbnail add a dolar sign symbol, and you will suggest thumbnails for each
 describe what is in the thumbnail very well and be as detailed as you can, so desginers can understnad and create. Here are the titles ${titles}.`;
 
   const options = {
@@ -82,8 +82,8 @@ describe what is in the thumbnail very well and be as detailed as you can, so de
   const messageContent = data.choices[0].message.content;
 
   let thum = messageContent.split("$");
-  let titleDisplayArea = document.getElementById("reply-content2");
-  titleDisplayArea.textContent = ""; // Clear the content area before appending titles
+  document.getElementById("reply-content2").textContent = data.choices[0].message.content;
+  let titleDisplayArea = ""; // Clear the content area before appending titles
 
   for (let i = 0; i < thum.length; i++) {
     const textObject = document.createElement("h5");
