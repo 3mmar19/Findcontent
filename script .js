@@ -1,4 +1,4 @@
-const API_KEY = "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";
+const API_KEY = "sk-";
 topic = "";
 length = "";
 titles = "";
